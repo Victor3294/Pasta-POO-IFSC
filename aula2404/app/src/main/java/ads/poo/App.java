@@ -6,10 +6,23 @@ package ads.poo;
 public class App {
     public static void main(String[] args) {
         Contador contador = new Contador();
-
         contador.definirValorAtual(-1);
         System.out.println(contador.obterValorAtual());
         contador.incrementaUm();
         System.out.println(contador.obterValorAtual());
+
+        Personagem personagem1 = new Personagem();
+        personagem1.definirClasse("Arqueiro");
+        personagem1.definirNome("Magrido");
+        personagem1.definirRaca("Orc");
+        personagem1.definirPontosDeVida(100);
+        System.out.println(personagem1.toString());
+        System.out.println(personagem1.receberDano(10));
+        System.out.println(personagem1.receberDano(90));
+        System.out.println(personagem1.toString());
+        System.out.println(personagem1.curarVida(20));
+        System.out.println(personagem1.curarVida(30));
+        System.out.println(personagem1.curarVida(100));
+        System.out.println(personagem1.toString());
     }
 }

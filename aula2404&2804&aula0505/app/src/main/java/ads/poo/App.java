@@ -25,9 +25,23 @@ public class App {
         // System.out.println(personagem1.curarVida(100));
         // System.out.println(personagem1.toString());
 
-        Disciplina d = new Disciplina(
-            "POO", "Programação Orientada a Objetos", "POO786202");
+        // Disciplina d = new Disciplina(
+        //     "POO", "Programação Orientada a Objetos", "POO786202");
  
-        System.out.println(d);
+        // System.out.println(d);
+
+        Caneta bic = new Caneta();
+
+        Caneta bic2 = new Caneta("azul");
+
+        Caneta bic3 = new Caneta("roxo", 100);
+
+        System.out.println(bic.toString());
+        System.out.println(bic2.toString());
+        System.out.println(bic3.toString());
+
+        System.out.println(bic.desenhar(3));
+        System.out.println(bic.desenhar(6, "*"));
+        
     }
 }

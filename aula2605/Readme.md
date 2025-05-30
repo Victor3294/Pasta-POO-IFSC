@@ -36,22 +36,22 @@ classDiagram
 
 ```mermaid
 classDiagram
+    Aviao *-- Motor
     class Aviao {
-        - MAXIMO_TRIPULANTES : int
-        - MAXIMO_PASSAGEIROS : int
-        - PESO_MAXIMO : double
-        - COMBUSTIVEL_MAXIMO : double
         - tripulantes : int
         - passageiros : int
         - peso : double
         - combustivel : double
         - motores : ArrayList~Motor~
+        + ligaAviao() void
+        + Aviao()
     }
     
     class Motor {
         - tipo: String
         - consumoCombustivel : int
         - taLigado : boolean
-        + ligaMotor()
+        + ligaDesligaMotor() void
+        + Motor()
     }
 ```

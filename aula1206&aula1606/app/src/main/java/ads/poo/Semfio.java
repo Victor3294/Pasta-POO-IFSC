@@ -13,8 +13,12 @@ public class Semfio extends Telefone{
         this.distancia = distancia;
     }
 
+    public double getFrequencia() {
+        return frequencia;
+    }
+
     @Override
-    public String imprimirDados() {
-        return super.imprimirDados() + "\nFrequencia: " + this.frequencia;
+    public String toString() {
+        return super.toString() + "\nFrequencia: " + this.frequencia;
     }
 }

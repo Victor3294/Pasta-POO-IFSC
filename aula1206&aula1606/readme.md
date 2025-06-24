@@ -29,3 +29,13 @@ classDiagram
     Midia *-- Avaliacao
     App *-- Midia
 ```
+
+```mermaid
+classDiagram
+    
+    class Transporte {
+        #marca: String
+        #modelo: String
+        
+    }
+```

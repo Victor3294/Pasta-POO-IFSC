@@ -15,7 +15,12 @@ public class Telefone {
         this.dim = dim;
     }
 
-    public String imprimirDados() {
+    public String getModelo() {
+        return modelo;
+    }
+
+    @Override
+    public String toString() {
         //Todo melhorar a String gerada
         return "Codigo: " + this.codigo + "\n" + dim.toString();
     }
